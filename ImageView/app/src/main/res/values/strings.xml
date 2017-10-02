@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Exemplo ImageView</string>
+    <string name="btnTrocar">Trocar imagem</string>
+</resources>

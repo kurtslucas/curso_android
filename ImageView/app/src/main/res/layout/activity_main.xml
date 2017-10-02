@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kurtslucas.com.imageview.MainActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="317dp"
+        android:layout_height="409dp"
+        android:layout_marginRight="33dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/goku"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnTrocar"
+        android:layout_width="337dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/btnTrocar"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+</android.widget.RelativeLayout>

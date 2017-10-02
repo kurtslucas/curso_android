@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,23 +14,43 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.422"
-        app:layout_constraintVertical_bias="0.097" />
+        app:layout_constraintVertical_bias="0.188"
+        app:layout_constraintHorizontal_bias="0.176"
+        android:layout_above="@+id/btnOk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="93dp" />
 
     <Button
         android:id="@+id/btnOk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnOk"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="137dp" />
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="204dp"
+        android:layout_above="@+id/ckAprovado"
+        android:layout_alignLeft="@+id/ckAprovado"
+        android:layout_alignStart="@+id/ckAprovado"
+        android:layout_marginBottom="112dp" />
 
     <CheckBox
         android:id="@+id/ckAprovado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ckAprovado"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="258dp" />
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="321dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="111dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <Switch
+        android:id="@+id/swLigado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ckAprovado"
+        android:layout_alignLeft="@+id/ckAprovado"
+        android:layout_alignStart="@+id/ckAprovado"
+        android:layout_marginBottom="34dp"
+        android:text="@string/swLigado" />
+
+</android.widget.RelativeLayout>

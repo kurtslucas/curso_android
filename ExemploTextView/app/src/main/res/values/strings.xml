@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Exemplo TextView</string>
+    <string name="novo_texto">Este texto vem do arquivo strings.xml</string>
+    <string name="btn_mudar_cor">Mudar as cores</string>
+</resources>
