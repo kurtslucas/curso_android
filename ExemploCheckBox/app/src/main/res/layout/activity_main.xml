@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kurtslucas.com.exemplocheckbox.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="17dp"
+        android:text="Selecione as formas de contato" />
+
+    <CheckBox
+        android:id="@+id/ckSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="32dp"
+        android:text="SMS" />
+
+    <CheckBox
+        android:id="@+id/ckEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ckSMS"
+        android:layout_below="@+id/ckSMS"
+        android:layout_marginTop="31dp"
+        android:text="Email" />
+
+    <CheckBox
+        android:id="@+id/ckTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ckEmail"
+        android:layout_below="@+id/ckEmail"
+        android:layout_marginTop="23dp"
+        android:text="Telefone" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ckTelefone"
+        android:layout_below="@+id/ckTelefone"
+        android:layout_marginTop="29dp"
+        android:text="Verificar" />
+</android.widget.RelativeLayout>
